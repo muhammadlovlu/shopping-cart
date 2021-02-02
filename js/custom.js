@@ -29,7 +29,7 @@ function calculateTotalPrice(){
     const caseCount = parseInt(caseInput.value);
 
     const totalPrice = phoneCount *200 + caseCount * 50;
-    document.getElementById('total-price').innerText = totalPrice;
+    document.getElementById('total-price').innerText = "$" + totalPrice;
 }
 
 
