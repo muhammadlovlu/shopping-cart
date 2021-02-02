@@ -1,13 +1,23 @@
-document.getElementById('case-increase').addEventListener('click', function (){
-    const caseInput = document.getElementById('case-count');
-    const caseCount = parseInt(caseInput.value);
-    const caseNewCount = caseCount +1;
-    caseInput.value = caseNewCount;
-    const caseTotal = caseNewCount * 50;
-    document.getElementById('case-Total').innerText = "$" + caseTotal;
-    
-    
-})
+function handlerProductChange(product, isIncrease) {
+    const productInput = document.getElementById(product + '-count');
+    const productCount = parseInt(productInput.value);
+    let productNewCount = productCount;
+    if (isIncrease == true) {
+        productNewCount = productCount + 1;
+    }
+    if (isIncrease == false && productCount > 0) {
+        productNewCount = productCount - 1;
+    }
+    productInput.value = productNewCount;
+    let total = productNewCount;
+    if (product == 'case') {
+        total = productNewCount * 50;
+    }
+    if (product == 'phone') {
+        total = productNewCount * 200;
+    }
+    document.getElementById(product + '-total').innerText = "$" + total;
+}
 
 
 
@@ -16,12 +26,16 @@ document.getElementById('case-increase').addEventListener('click', function (){
 
 
 
-document.getElementById('case-decrease').addEventListener('click', function(){
-    const caseInput = document.getElementById('case-count');
-    const caseCount = parseInt(caseInput.value);
-    const caseNewCount = caseCount - 1;
-    caseInput.value = caseNewCount;
-})
+
+
+
+
+
+
+
+
+
+
 
 
 
