@@ -1,7 +1,27 @@
-document.getElementById('increase').addEventListener('click', function (){
-    document.getElementById('')
+document.getElementById('case-increase').addEventListener('click', function (){
+    const caseInput = document.getElementById('case-count');
+    const caseCount = parseInt(caseInput.value);
+    const caseNewCount = caseCount +1;
+    caseInput.value = caseNewCount;
+    const caseTotal = caseNewCount * 50;
+    document.getElementById('case-Total').innerText = "$" + caseTotal;
+    
+    
 })
 
+
+
+
+
+
+
+
+document.getElementById('case-decrease').addEventListener('click', function(){
+    const caseInput = document.getElementById('case-count');
+    const caseCount = parseInt(caseInput.value);
+    const caseNewCount = caseCount - 1;
+    caseInput.value = caseNewCount;
+})
 
 
 
