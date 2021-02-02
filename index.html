@@ -25,7 +25,8 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button id="decrease" class="btn btn-default bg-success"><i class="fas fa-minus"></i></button>
+                           <button id="decrease" class="btn btn-default bg-success"><i
+                                 class="fas fa-minus"></i></button>
                            <input type="number" class="form-control text-center qtyUpdate1" value="1">
                            <button id="increase" class="btn btn-default bg-primary "><span><i
                                     class="fas fa-plus"></i></span></button>
@@ -45,11 +46,12 @@
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
                            <button id="deItem2" class="btn btn-default bg-success"><i class="fas fa-minus"></i></button>
-                           <input type="text" class="form-control text-center qtyUpdate2" value="1">
-                           <button id="incItem2" class="btn btn-default bg-primary"><span><i class="fas fa-plus"></i></span></button>
+                           <input id="case-count" type="text" class="form-control text-center" value="1">
+                           <button id="increase" class="btn btn-default bg-primary"><span><i
+                                    class="fas fa-plus"></i></span></button>
 
                         </div>
-                        <h5>$50</h5>
+                        <h5>$<span id="updateSpanText">50.10</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -78,7 +80,7 @@
          </div>
       </div>
    </section>
-<script src="js/custom.js"></script>
+   <script src="js/custom.js"></script>
 
 </body>
 
