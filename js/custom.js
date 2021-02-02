@@ -17,8 +17,20 @@ function handlerProductChange(product, isIncrease) {
         total = productNewCount * 200;
     }
     document.getElementById(product + '-total').innerText = "$" + total;
+    calculateTotalPrice();
 }
 
+
+function calculateTotalPrice(){
+    const phoneInput = document.getElementById('phone-count');
+    const phoneCount = parseInt(phoneInput.value);
+    
+    const caseInput = document.getElementById('case-count');
+    const caseCount = parseInt(caseInput.value);
+
+    const totalPrice = phoneCount *200 + caseCount * 50;
+    document.getElementById('total-price').innerText = totalPrice;
+}
 
 
 
